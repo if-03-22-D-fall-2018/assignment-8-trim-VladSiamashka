@@ -31,11 +31,9 @@
        count++;
      }
 
-
-
      max=strlen(trimmed_string);
      for (int i = 0; i < max; i++) {
-       if (trimmed_string[i]==' ') {
+       if (trimmed_string[i]==' ' && trimmed_string[i+1]==' ') {
          trimmed_string[i]='\0';
        }
      }
